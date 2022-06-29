@@ -1,9 +1,10 @@
+import { Post } from './components/Post';
 import { Header } from './components/Header';
-import { Post } from './Post';
-
-import './global.css'
-import styles from './App.module.css'
 import { Sidebar } from './components/Sidebar';
+
+import styles from './App.module.css';
+
+import './global.css';
 
 export function App() {
   return (
@@ -17,11 +18,15 @@ export function App() {
             content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi tempora sint velit optio! Ipsum, architecto iusto at dolor sed quidem vitae natus?"
           />
           <Post
-            author="Diego Fernandes"
+            author="Karina Lucindo"
+            content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi tempora sint velit optio! Ipsum, architecto iusto at dolor sed quidem vitae natus?"
+          />
+          <Post
+            author="Karina Lucindo"
             content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi tempora sint velit optio! Ipsum, architecto iusto at dolor sed quidem vitae natus?"
           />
         </main>
       </div>
     </>
-  )
+  );
 }
