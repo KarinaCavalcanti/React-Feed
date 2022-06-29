@@ -1,9 +1,27 @@
-import { useState } from 'react'
+import { Header } from './components/Header';
+import { Post } from './Post';
 
-function App() {
+import './global.css'
+import styles from './App.module.css'
+import { Sidebar } from './components/Sidebar';
+
+export function App() {
   return (
-    <h1>Hello, world!</h1>
+    <>
+      <Header />
+      <div className={styles.wrapper}>
+        <Sidebar />
+        <main>
+          <Post
+            author="Karina Lucindo"
+            content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi tempora sint velit optio! Ipsum, architecto iusto at dolor sed quidem vitae natus?"
+          />
+          <Post
+            author="Diego Fernandes"
+            content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi tempora sint velit optio! Ipsum, architecto iusto at dolor sed quidem vitae natus?"
+          />
+        </main>
+      </div>
+    </>
   )
 }
-
-export default App
